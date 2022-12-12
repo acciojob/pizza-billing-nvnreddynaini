@@ -16,9 +16,11 @@ public class Pizza {
     public int getPrice(){
         if (isVeg) {
             price = 300;
+            res = price;
             return this.price;
         }else {
             price = 400;
+            res = price;
             return this.price;
         }
     }
@@ -48,7 +50,6 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        bill = bill+getPrice();
         bill = Integer.toString(res);
         return this.bill;
     }
